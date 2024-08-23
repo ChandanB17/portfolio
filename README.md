@@ -30,7 +30,7 @@ These meta tags are included to improve search engine visibility and provide a c
 
 ## Deployment
 
-The portfolio is live and accessible at https://solarluiso-portfolio.vercel.app.
+The portfolio is live and accessible at https://chandan-portfolio-chi.vercel.app/.
 
 You can view and manage the deployment settings on Vercel Dashboard.
 
