@@ -1,22 +1,17 @@
-const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8080";
+const BASE_URL = process.env.NEXT_PUBLIC_API_URL;
 
-export const sendContactMessage = async (formData) => {
-  try {
-    const res = await fetch(`${API_BASE_URL}/api/contact`, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(formData),
-    });
+export const sendContactMessage = async (data) => {
+  const res = await fetch(`${BASE_URL}/api/contact`, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(data),
+  });
 
-    if (!res.ok) {
-      throw new Error("Failed to send message");
-    }
-
-    return await res.json();
-  } catch (error) {
-    console.error("API Error:", error);
-    throw error;
+  if (!res.ok) {
+    throw new Error("Failed");
   }
+
+  return res.json();
 };
