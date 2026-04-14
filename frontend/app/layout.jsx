@@ -4,6 +4,7 @@ import "./globals.css";
 // components
 import Header from "@/components/Header";
 import PageTransition from "@/components/PageTransition";
+import { Toaster } from "sonner";
 
 const jetbrainsMono = JetBrains_Mono({
   subsets: ["latin"],
@@ -24,6 +25,7 @@ export default function RootLayout({ children }) {
         <PageTransition>
           <Header />
           {children}
+          <Toaster position="top-right" richColors />
         </PageTransition>
       </body>
     </html>
