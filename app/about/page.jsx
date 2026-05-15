@@ -8,8 +8,28 @@ import {
   FaNodeJs,
   FaUbuntu,
   FaLinux,
+  FaJava,
+  FaDocker,
+  FaGitAlt,
 } from "react-icons/fa";
-import {  SiMysql, SiCplusplus, SiMongodb,SiTailwindcss, SiNextdotjs } from "react-icons/si";
+
+import {
+  SiMysql,
+  SiCplusplus,
+  SiMongodb,
+  SiTailwindcss,
+  SiNextdotjs,
+  SiTypescript,
+  SiExpress,
+  SiPostgresql,
+  SiRedis,
+  SiFirebase,
+  SiAmazonaws,
+  SiRedux,
+  SiAmazondynamodb,
+  SiSpring,
+} from "react-icons/si";
+
 import { motion } from "framer-motion";
 
 // components
@@ -63,20 +83,21 @@ const experience = {
     "Proven expertise in full stack development, delivering robust web applications from conception to deployment.",
   items: [
     {
+      company: "Deloitte, Bangalore",
+      position: "Software Developer",
+      duration: "Aug 2025 - Present",
+    },
+    {
+      company: "Deloitte, Bangalore",
+      position: "Produt Engineer Intern",
+      duration: "Jan 2025 - Jul 2025",
+    },
+    {
       company: "Niveus Solutions inc",
       position: "Full Stack Developer",
       duration: "Oct 2023 - Nov 2023",
     },
-    // {
-    //   company: "",
-    //   position: "Full Stack Developer",
-    //   duration: "2022 - Present",
-    // },
-    // {
-    //   company: "Tech Solutions Inc.",
-    //   position: "Full Stack Developer",
-    //   duration: "2022 - Present",
-    // },
+    
     // {
     //   company: "Tech Solutions Inc.",
     //   position: "Full Stack Developer",
@@ -95,7 +116,7 @@ const education = {
     {
       institution: "Sahyadri College of Engineeering and Management",
       degree: "Bachelor of Engineering(ISE) ",
-      duration: "2023",
+      duration: "2021 - 2025",
       location:"Mangalore, Karnataka",
     },
     {
@@ -118,7 +139,7 @@ const education = {
 const skills = {
   title: "My skills",
   description:
-    "Adept in the MERN Ecosystem with proficiency in UI/UX design.",
+  "Backend-focused software engineer experienced in scalable microservices, cloud-native applications, distributed systems, and modern full-stack development.",
   skillList: [
     {
       icon: <FaHtml5 />,
@@ -168,6 +189,54 @@ const skills = {
       icon: <FaLinux />,
       name: "linux",
     },
+    {
+      icon: <FaJava />,
+      name: "java",
+    },
+    {
+      icon: <SiTypescript />,
+      name: "typescript",
+    },
+    {
+      icon: <SiExpress />,
+      name: "express.js",
+    },
+    {
+      icon: <SiPostgresql />,
+      name: "postgresql",
+    },
+    {
+      icon: <SiRedis />,
+      name: "redis",
+    },
+    {
+      icon: <SiFirebase />,
+      name: "firebase",
+    },
+    {
+      icon: <SiAmazonaws />,
+      name: "aws",
+    },
+    {
+      icon: <FaDocker />,
+      name: "docker",
+    },
+    {
+      icon: <FaGitAlt />,
+      name: "git",
+    },
+    {
+      icon: <SiRedux />,
+      name: "redux",
+    },
+    {
+      icon: <SiAmazondynamodb />,
+      name: "dynamodb",
+    },
+    {
+      icon: <SiSpring />,
+      name: "spring boot",
+    }
   ],
 };
 

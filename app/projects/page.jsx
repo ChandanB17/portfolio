@@ -53,6 +53,17 @@ const projects = [
     live: "",
     github: "https://github.com/ChandanB17/Intrusion-Detection-System/tree/main",
   },
+  {
+    num: "04",
+    category: "Portfolio",
+    title: "Developer Portfolio Website",
+    description:
+    "Designed and developed a responsive developer portfolio with reusable UI components, animated transitions, and scalable frontend architecture using Next.js and Framer Motion. Implemented dynamic project rendering, interactive tab-based navigation, optimized component reusability, and responsive layouts to enhance user experience across devices. Integrated modern UI patterns with Tailwind CSS, centralized state-driven rendering, and modular component structures for maintainability and performance optimization.",
+    stack: [{ name: "Next.js" }, { name: "SpringBoot" }, { name: "PostgreSQL" }, { name: "Vercel" }],
+    image: "/assets/projects/demo.png",
+    live: "https://chandan-portfolio-chi.vercel.app/",
+    github: "https://github.com/ChandanB17/Intrusion-Detection-System/tree/main",
+  },
 ];
 
 const Projects = () => {
@@ -103,18 +114,20 @@ const Projects = () => {
               {/* buttons */}
               <div className="flex items-center gap-4">
                 {/* live project button */}
-                {/* <Link href={project.live}>
-                  <TooltipProvider delayDuration={100}>
-                    <Tooltip>
-                      <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
-                        <BsArrowUpRight className="text-white text-3xl group-hover:text-accent" />
-                      </TooltipTrigger>
-                      <TooltipContent>
-                        <p>Live project</p>
-                      </TooltipContent>
-                    </Tooltip>
-                  </TooltipProvider>
-                </Link> */}
+                {project?.live && 
+                  <Link href={project.live}>
+                    <TooltipProvider delayDuration={100}>
+                      <Tooltip>
+                        <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
+                          <BsArrowUpRight className="text-white text-3xl group-hover:text-accent" />
+                        </TooltipTrigger>
+                        <TooltipContent>
+                          <p>Live project</p> 
+                        </TooltipContent>
+                      </Tooltip>
+                    </TooltipProvider>
+                  </Link>
+                }
                 {/* github button */}
                 <Link href={project.github}>
                   <TooltipProvider delayDuration={100}>
